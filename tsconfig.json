@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    // Language and environment
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "useDefineForClassFields": true,
+
+    // Module resolution
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+
+    // Strict type-checking
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Interop
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+
+    // Emit — Vite handles the actual compilation; tsc is type-check only
+    "noEmit": true,
+
+    // Path aliases — mirror these exactly in vite.config.ts
+    "baseUrl": ".",
+    "paths": {
+      "@types/*":   ["src/types/*"],
+      "@core/*":    ["src/core/*"],
+      "@systems/*": ["src/systems/*"],
+      "@scenes/*":  ["src/scenes/*"],
+      "@ui/*":      ["src/ui/*"],
+      "@utils/*":   ["src/utils/*"],
+      "@data/*":    ["src/data/*"],
+      "@config/*":  ["src/config/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
