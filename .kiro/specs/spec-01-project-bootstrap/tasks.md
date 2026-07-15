@@ -1,6 +1,6 @@
 # SPEC-01 Tasks — Project Bootstrap and Build System
 
-**Status:** Awaiting approval
+**Status:** Complete
 **Spec:** `spec.md`
 
 ---
@@ -27,7 +27,7 @@
   - `src/main.ts` imports Phaser, no instantiation yet
   - Build and dev server both clean
 
-- [ ] **TASK-01-F** — Create source and asset folder skeleton
+- [x] **TASK-01-F** — Create source and asset folder skeleton
   - All `src/` and `assets/` subdirectories from architecture 4.1
   - Each empty directory has a `.gitkeep`
 
